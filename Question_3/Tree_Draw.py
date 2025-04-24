@@ -1,4 +1,3 @@
-print("Run this Python code locally to draw the tree:")
 print('''
 import turtle
 def draw_tree(length, left_angle, right_angle, depth, factor):
@@ -28,4 +27,3 @@ import time
 time.sleep(100)
 
 ''')
-
