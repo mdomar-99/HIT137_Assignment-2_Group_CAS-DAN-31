@@ -20,7 +20,7 @@ turtle.backward(100)
 turtle.down()
 
 # Draw the tree
-draw_tree(100, 20, 25, 5, 0.7)
+draw_tree(150, 30, 35, 8, 0.7)
 
 # Hide turtle and hold window open
 turtle.hideturtle()
