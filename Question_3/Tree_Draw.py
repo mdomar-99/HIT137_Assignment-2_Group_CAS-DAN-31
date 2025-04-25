@@ -1,5 +1,6 @@
-print('''
 import turtle
+import time
+
 def draw_tree(length, left_angle, right_angle, depth, factor):
     if depth == 0:
         return
@@ -11,19 +12,17 @@ def draw_tree(length, left_angle, right_angle, depth, factor):
     turtle.left(right_angle)
     turtle.backward(length)
 
+# Setup turtle screen
 turtle.speed(0)
 turtle.left(90)
 turtle.up()
 turtle.backward(100)
 turtle.down()
+
+# Draw the tree
 draw_tree(100, 20, 25, 5, 0.7)
-turtle.hideturtle()
-turtle.done()
-turtle.hideturtle()
-turtle.done()
 
-# This prevents the window from closing immediately
-import time
+# Hide turtle and hold window open
+turtle.hideturtle()
+turtle.done()
 time.sleep(100)
-
-''')
